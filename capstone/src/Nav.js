@@ -1,15 +1,15 @@
-import './App.css';
+import { Route, Routes, Link } from "react-router-dom"
 
 function Nav() {
   return (
     <>
     <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Menu</a></li>
-    <li> <a href="#">Reservations</a></li>
-    <li><a href="#">Order Online</a></li>
-    <li><a href="#">Login</a></li>
+    <li><Link id="nav" to="/">Home</Link> </li>
+    <li><a id="nav" href="#">About</a></li>
+    <li><a id="nav"  href="#">Menu</a></li>
+    <li>  <Link id="nav" to="/BookingPage">Reservations</Link> </li>
+    <li><a id="nav"  href="#">Order Online</a></li>
+    <li><a id="nav" href="#">Login</a></li>
 
     </ul>
     </>

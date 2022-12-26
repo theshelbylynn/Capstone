@@ -1,0 +1,231 @@
+body {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    width: 40%;
+    margin: 1em 5em;
+}
+
+.logo img {
+    width: 70%;
+}
+
+.navigation {
+    display: flex;
+    width: 60%;
+    margin-top: 1em;
+    margin-left: 4em;
+}
+ 
+.navigation li {
+   display: inline-block;
+   margin: 1em;
+   color: #000;
+   
+}
+
+#nav {
+    font-family: 'Karla', sans-serif;
+    font-weight: 800;
+    color:#000;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+.main {
+    display: flex;
+    background-color: #495E57;
+    width: 100%;
+    height: 400px;
+    padding: 1em;
+    margin-top: 2em;
+}
+
+.main-content {
+    width: 40%;
+    margin-left: 7em;
+    margin-right: 5em;
+}
+
+.main-content p {
+    font-family: 'Karla', sans-serif;
+    font-size: 22px;
+    color: #fff;
+    width: 350px;
+}
+
+.featured img {
+    width: 60%;
+    margin-top: 2em;
+    margin-left: 6em;
+}
+
+.featured {
+    width: 50%;
+   
+}
+
+
+h1 {
+    font-family: 'Markazi Text', serif;
+    font-size: 60px;
+    font-weight: 700;
+    color: #F4CE14;
+}
+
+h2 {
+    font-family: 'Markazi Text', serif;
+    font-size: 30px;
+    color: #FFF;
+    margin-top: -1.5em;
+}
+
+h3 {
+    font-family: 'Markazi Text', serif;
+    font-size: 60px;
+    color: #000;
+    margin: 3em;
+   
+}
+
+h4 {
+    font-family: 'Markazi Text', serif;
+    font-size: 60px;
+    font-weight: 700;
+    color: #000;
+}
+
+h5 {
+    font-family: 'Markazi Text', serif;
+    font-size: 30px;
+    color: #000;
+    margin-top: -2.5em;
+}
+
+
+#button {
+background-color: #F4CE14; 
+color: #000;
+font-family: 'Karla', sans-serif;
+font-weight: 800;
+font-size: 18px;
+width: 12em;
+height: 3em;
+margin: 1em;
+border-radius: 2em;
+border: none;
+}
+
+.specials {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.title {
+    width: 50%;
+    height: auto;
+}
+
+.title-button {
+    width: 50%;
+    height: auto;
+    margin-top: 10.5em;
+    margin-left: 22em;
+}
+
+
+.testimonials {
+    width: 100%;
+    height: 350px;
+    background-color: #495E57;
+    text-align: center;
+    padding: 1em;
+}
+
+.about {
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 3em 0;
+    
+}
+
+.about-content {
+    width: 40%;
+    margin-left: 7em;
+    margin-right: 5em;
+}
+
+.about-content p {
+    font-family: 'Karla', sans-serif;
+    font-size: 18px;
+    line-height: 1.7em;
+    color: #000;
+    margin-top: -1em;
+}
+
+
+.owners {
+    width: 50%;
+   
+}
+
+#male {
+    width: 50%;
+    margin-top: 1em;
+    margin-left: 10em;
+}
+
+#woman {
+    width: 40%;
+    margin-top: -10em;
+    margin-left: 2em;
+    
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    border-top: 2px dashed #495E57;
+}
+
+.footer img {
+    width: 100%;
+}
+
+.one {
+    width: 20%;
+    margin-right: 2em;
+
+}
+.two {
+    width: 20%;
+    margin: 1em;
+    margin-top: 7em;
+}
+.three {
+    width: 20%;
+    margin: 1em;
+    margin-top: 7em;
+}
+.four {
+    width: 20%;
+    margin: 1em;
+    margin-top: 7em;
+}

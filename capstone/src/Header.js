@@ -1,11 +1,23 @@
-import './App.css';
+
+import Nav from './Nav.js';
 import Logo from './Logo.png';
 
 function Header() {
   return (
     <>
-<img src={Logo} alt="Logo" />
 
+    <div className="header">
+
+    <div className="logo">
+<img src={Logo} alt="Logo" />
+  </div>
+
+    <div className="navigation">
+      <Nav />
+    </div>
+
+  </div>
+  
     </>
   );
 }
