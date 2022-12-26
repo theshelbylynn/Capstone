@@ -1,5 +1,7 @@
 import Specials from './Specials.js';
+import Booking from './BookingPage.js';
 import pizza from './pizza.png';
+import { Route, Routes, Link } from "react-router-dom"
 
 
 function Main() {
@@ -13,7 +15,9 @@ function Main() {
       <h2>Chicago</h2>
       <p>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
 
-      <button id="button">Reserve a Table</button>
+
+      <Link to="/BookingPage"><button id="button"to="/BookingPage" >Reserve a Table</button></Link> 
+      
     </div>
 
     <div className="featured">
