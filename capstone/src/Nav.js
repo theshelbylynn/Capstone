@@ -1,4 +1,6 @@
 import { Route, Routes, Link } from "react-router-dom"
+import Booking from './BookingPage'
+import Dropdown from 'react-bootstrap/Dropdown';
 
 function Nav() {
   return (
@@ -17,3 +19,4 @@ function Nav() {
 }
 
 export default Nav;
+  

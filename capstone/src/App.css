@@ -11,27 +11,64 @@ ul {
     width: 100%;
 }
 
+
+
 .logo {
     display: flex;
+    flex-wrap: wrap;
     width: 40%;
     margin: 1em 5em;
+    
 }
 
 .logo img {
-    width: 70%;
+    width: 100%;
+    height: auto;
 }
+
+@media (max-width: 1050px) {
+   .logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 1em 0;
+   }
+  }
+
+@media (max-width: 1050px) {
+   .logo img {
+    width: 75%;
+   }
+  }
+
+@media (max-width: 1050px) {
+   .header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+   }
+  }
+
+
+/* NAV START */
 
 .navigation {
     display: flex;
+    flex-wrap: wrap;
     width: 60%;
     margin-top: 1em;
     margin-left: 4em;
+    text-align: center;
 }
+
+
  
 .navigation li {
    display: inline-block;
    margin: 1em;
    color: #000;
+   
    
 }
 
@@ -41,23 +78,68 @@ ul {
     color:#000;
     text-decoration: none;
     list-style: none;
+    
 }
 
+
+@media (max-width: 1050px) {
+    .navigation {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+    }
+  }
+@media (min-width: 880px) {
+    .navigation {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    
+    }
+  }
+
+
+/* NAV END */
+
+
+/* MAIN START */
 
 .main {
     display: flex;
     background-color: #495E57;
     width: 100%;
-    height: 400px;
-    padding: 1em;
+    height: 420px;
     margin-top: 2em;
 }
+
+@media (max-width: 800px) {
+    .main {
+     justify-content: center;
+     height: auto;
+     text-align: center;
+    }
+   }
+
 
 .main-content {
     width: 40%;
     margin-left: 7em;
     margin-right: 5em;
 }
+
+
+@media (max-width: 800px) {
+    .main-content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 2em;
+    }
+  }
 
 .main-content p {
     font-family: 'Karla', sans-serif;
@@ -66,16 +148,49 @@ ul {
     width: 350px;
 }
 
+@media (max-width: 800px) {
+    .main-content p {
+     text-align: center;
+     width: 95%;
+    }
+   }
+
+
 .featured img {
     width: 60%;
     margin-top: 2em;
     margin-left: 6em;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
 }
+
+@media (min-width: 700px max-width: 1050) {
+    .featured img {
+      margin-left: -2em;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .featured img {
+    display: none;
+    }
+  }
 
 .featured {
     width: 50%;
    
 }
+
+@media (max-width: 800px) {
+    .featured {
+      display: none;
+    }
+  }
+
+/* MAIN END */
+
+
+/* HEADERS & BUTTONS START */
 
 
 h1 {
@@ -96,9 +211,20 @@ h3 {
     font-family: 'Markazi Text', serif;
     font-size: 60px;
     color: #000;
-    margin: 3em;
+    margin: 1em;
+    margin-right: 5em;
    
 }
+
+@media (max-width: 800px) {
+    h3 {
+        font-size: 60px;
+        margin-top: 1em;
+        margin-left: 0;
+        margin-right: 0;
+    }
+  }
+
 
 h4 {
     font-family: 'Markazi Text', serif;
@@ -126,35 +252,193 @@ height: 3em;
 margin: 1em;
 border-radius: 2em;
 border: none;
+box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
 }
+
+.specials #button {
+    margin-top: 4em;
+}
+
+@media (max-width: 400px) {
+    .specials #button {
+        margin-top: 1em;
+        margin-bottom: 2em;
+    }
+  }
+
+/* HEADER & BUTTONS END */
+
+
+
+/* SPECIALS START */
+
 
 .specials {
     display: flex;
-    justify-content: center;
+    justify-content:center;
     width: 100%;
     height: auto;
+    margin-top: 6em;
+
+}
+
+.specials-head {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
+
+}
+
+
+.card-img-top {
+    width: 95%;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    margin-bottom: -.2em;
+    box-shadow: 5px 10px 20px #ccc;
+    margin-top: 8em;
+}
+
+.card {
+    margin-top: -4em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 3em;
+    margin-top: 1em;
+}
+
+.card-body {
+    font-family: 'Karla', sans-serif;
+    background-color: #F2EFEF;
+    margin-right: 1em;
+    padding: 1em;
+    line-height: 1.8em;
+    height: 250px;
+    box-shadow: 5px 10px 20px #ccc;
+}
+
+@media (min-width: 700px) {
+    .card-body {
+        height: 300px;
+
+    }
+  }
+
+
+.card-title {
+    font-family: 'Markazi Text', serif;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.btn.btn-primary {
+    font-family: 'Karla', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    border: none;
 }
 
 .title {
-    width: 50%;
+    width: 30%;
     height: auto;
+    margin-right: 8em;
+
 }
 
 .title-button {
     width: 50%;
     height: auto;
     margin-top: 10.5em;
-    margin-left: 22em;
+    margin-left: 15em;
 }
+
+
+/* SPECIALS END */
+
+
+/* TESTIMONIALS START */
 
 
 .testimonials {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     width: 100%;
-    height: 350px;
+    height: auto;
     background-color: #495E57;
     text-align: center;
-    padding: 1em;
+    padding-top: 1em;
+    
 }
+
+.testimonial-header {
+    font-family: 'Markazi Text', serif;
+    font-size: 60px;
+    font-weight: 700;
+    width: 100%;
+    color: #F4CE14;
+}
+
+.review-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}
+.review {
+    width: 250px;
+    height: 250px;
+    background-color: #fff;
+    margin: 2em;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+    
+}
+
+.review p {
+    font-family: 'Karla', sans-serif;
+}
+
+
+@media (max-width: 1050px) {
+    .review p {
+        margin: 1em;
+    }
+  }
+
+#profile {
+    width: 30%;
+    border-radius: 50%;
+    margin: 1em;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+#rating {
+    width: 50%;
+}
+
+.review h2 {
+    font-family: 'Markazi Text', serif;
+    font-size: 30px;
+    color: #000;
+    text-align: center;
+    margin: .1em;
+
+}
+
+/* TESTIMONIALS END */
+
+
+/* ABOUT START */
 
 .about {
     display: flex;
@@ -164,11 +448,23 @@ border: none;
     
 }
 
+@media (max-width: 800px) {
+    .about {
+    flex-wrap: wrap;
+    }
+  }
+
 .about-content {
     width: 40%;
     margin-left: 7em;
     margin-right: 5em;
 }
+
+@media (max-width: 800px) {
+    .about-content {
+    width: 100%;
+    }
+  }
 
 .about-content p {
     font-family: 'Karla', sans-serif;
@@ -179,23 +475,44 @@ border: none;
 }
 
 
+@media (max-width: 1050px) {
+    .about-content p {
+        font-size: 16px;
+    }
+  }
+
+
 .owners {
     width: 50%;
-   
 }
+
+@media (max-width: 800px) {
+    .owners {
+        width: 100%;
+        margin: 3em;
+    }
+  }
 
 #male {
     width: 50%;
     margin-top: 1em;
     margin-left: 10em;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
 }
 
 #woman {
     width: 40%;
     margin-top: -10em;
     margin-left: 2em;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
     
 }
+
+/* ABOUT END */
+
+
+/* FOOTER START */
+
 
 .footer {
     display: flex;
@@ -205,15 +522,39 @@ border: none;
     border-top: 2px dashed #495E57;
 }
 
+@media (max-width: 800px) {
+    .footer {
+     flex-wrap: wrap;
+     text-align: center;
+    
+    }
+   }
+
+
 .footer img {
     width: 100%;
 }
+
+@media (max-width: 800px) {
+    .footer img {
+     width: 50%;
+     margin:0;
+    }
+   }
+
 
 .one {
     width: 20%;
     margin-right: 2em;
 
 }
+
+@media (max-width: 800px) {
+    .one {
+     margin: 0;
+    }
+   }
+
 .two {
     width: 20%;
     margin: 1em;
@@ -229,3 +570,91 @@ border: none;
     margin: 1em;
     margin-top: 7em;
 }
+
+@media (max-width: 800px) {
+    .one, .two , .three, .four {
+        display: flex;
+     width: 100%;
+     justify-content: center;
+     margin-left: 0;
+     margin-right: 0;
+    }
+   }
+
+
+
+/* ABOUT END */
+
+
+/* BOOKING PAGE START */
+
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.form-container {
+    display: flex;
+    width: 100%;
+}
+
+.form-container h3 {
+    font-family: 'Markazi Text', serif;
+    font-size: 60px;
+    color: #000;
+    text-align: center;
+    margin: 1em;
+    width: 100%;
+   
+}
+
+.input {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2em;
+    margin-left: -8em;
+    width: 100%;
+   
+}
+
+.input label {
+    font-family: 'Karla', sans-serif;
+    font-weight: 800;
+    width: 200px;
+   
+}
+
+input[type=text] {
+    margin: 1em;
+    width: 30em;
+    height: 2.5em;
+    font-size: 14px;
+}
+
+input[type=date] {
+    margin: 1em;
+    width: 30em;
+    height: 2.5em;
+    font-size: 14px;
+}
+
+
+input[type=time] {
+    margin: 1em;
+    width: 30em;
+    height: 2.5em;
+    font-size: 14px;
+}
+
+input[type=submit] {
+    margin: 1em;
+    width: 20em;
+    height: 2.5em;
+    font-size: 20px;
+    margin-left: 13.8em;
+}
+
+/* BOOKING PAGE END */

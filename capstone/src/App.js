@@ -6,21 +6,19 @@ import Home from'./Home.js';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 
+
 function App() {
   return (
     <>
 
-
-      <Router>
     <Header/>
-
     <Routes>
-      <Route exact path="/" element={<Home/>} />
-      <Route exact path="/BookingPage.js" element={<Booking/>} />
+      <Route path="/" element={<Home/>} />
+      <Route path="/BookingPage" element={<Booking/>} />
       </Routes>
     
     <Footer/>
-    </Router>
+    
     </>
 
   );
